@@ -28,11 +28,11 @@ bspwm*
 notion
 LXDE
 
-*wont start
-**starts but is unresponsive(sort of fixed)
+won't start*                                  
+starts** but is unresponsive(sort of fixed)
 
 
-26 wm/de s  21 functioning..
-made on top of brokenmans LXDE module 
-logs in to LXDE, just log out to pick your poison..
-man pages/docs for most included..
+26 wm/de s  21 functioning..       
+made on top of brokenmans LXDE module              
+logs in to LXDE, just log out to pick your poison..         
+man pages/docs for most included..       
