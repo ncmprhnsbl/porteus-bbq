@@ -1,0 +1,41 @@
+these instructions require Porteus Linux http://www.porteus.org/
+
+extract(xzm2dir) LXDE module, rename it 003-bbq
+
+obtain package in pkglist, place in PKGS
+
+cd /mnt/sda6/Porteus3.2.1/BBuild/PKGS
+
+installpkg --terse --root /path/to/003-bbq *.t?z
+
+for a in *.xzm; do xzm2dir $a /path/to//003-bbq; done
+
+cp -a /path/to/TREE/* /path/to/003-bbq/
+
+cd /path/to/003-bbq
+
+remove:
+/usr/share/man
+/usr/man
+/usr/include
+/usr/doc
+/usr/share/applications/compton.desktop
+/usr/share/applications/tint2.desktop
+/usr/src
+/var/log/removed-packages
+/var/log/removed-scripts
+/usr/share/locale
+/etc/X11/xinit/xinitrc
+/usr/share/gnome-control-center
+/usr/share/gnome
+/usr/share/gdm
+
+check /usr/share/xsessions for missing .desktop files
+add missing
+
+cd ..
+
+
+ 
+dir2xzm /path/to/003-bbq 003-bbq-<version>.xzm
+
