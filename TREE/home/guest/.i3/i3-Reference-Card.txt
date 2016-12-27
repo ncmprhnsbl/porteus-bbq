@@ -1,0 +1,79 @@
+
+  i3 Reference Card
+
+http://i3wm.org/docs/userguide.html
+
+Throughout this guide, the i3 logo will be used to refer to the
+configured modifier. This is the Alt key (|Mod1|) by default, with super
+(|Mod4|) being a popular alternative.
+
+
+    Basics
+
++enter	open new terminal
++j 	focus left
++k 	focus down
++l 	focus up
++; 	focus right
+
+
+    Changing the container layout
+
++e 	default
++s 	stacking
++w 	tabbed
+
+
+    Fullscreen mode
+
++f 	toggle fullscreen
+
+
+    Opening other applications
+
++d 	open application (with dmenu)
++Shift+d open application (with i3-dmenu)
++Shift+f open filemanager (pcmanfm)
++Shift+w open webbrowser ()
+
+
+    Closing windows
+
++shift + q 	kill a window
+
+
+    Using workspaces
+
++1–9 	switch to another workspace
+
+
+    Moving windows to workspaces
+
++shift + 1–9 	move a window to another workspace
+
+
+    Resizing
+
++ r   resize with arrows
++ mouseRight resize with mouse
+
+
+    Restart / Exit
+
++shift + r 	restart i3 inplace
++shift + e 	exit i3
+
+
+    Floating
+
++shift + space 	toggle floating
++mouseleft 	drag floating
+
+Copyright © 2012, Michael Stapelberg
+All rights reserved
+Designed by Zeus Panchenko
+
+Permission is granted to copy, distribute and/or modify this document
+provided the copyright notice and this permission notice are preserved
+on all copies.
+

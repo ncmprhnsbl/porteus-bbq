@@ -1,0 +1,5 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=XSession
+Name=blackbox
+Exec=/home/guest/.blackbox/bbstart.sh

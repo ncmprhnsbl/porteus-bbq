@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Xsession
+Name=echinus
+Name[en_US]=echinus
+Comment=Simple and fast window manger
+Terminal=false
+Exec=echinus
+TryExec=echinus

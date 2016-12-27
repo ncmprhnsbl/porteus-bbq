@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+
+<JWM>
+    <StartupCommand>xdg_menu --format jwm --fullmenu >/home/guest/.jwm-apps</StartupCommand>
+    <StartupCommand>conky</StartupCommand>
+    <StartupCommand>jwm -reload</StartupCommand>
+    <!-- The root menu. -->
+    <RootMenu onroot="13" labeled="true" label="joePorteus">
+        <Separator/>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/lxterminal.png" label="Terminal">lxterminal</Program>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/gnome-music.png" label="Audio">lxmusic</Program>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/file-manager.png" label="File">pcmanfm</Program>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/browser.png" label="Web">/opt/porteus-scripts/xorg/browser</Program>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/leafpad.png" label="Editor">leafpad</Program>
+        <Menu icon="/usr/share/icons/Vibrancy-Colors/categories/16/applications-system.png" label="Applications">
+        <Include>.jwm-apps</Include>
+        </Menu>
+        <Menu icon="/usr/share/icons/Vibrancy-Colors/categories/16/applications-utilities.png" label="Utilities">
+            <Program icon="/usr/share/icons/Vibrancy-Colors/devices/16/camera.png" label="Screenshot">/opt/porteus-scripts/extra/gtk-scrot</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/gtk-theme-config.png" label="Lxappearance">lxappearance</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/leafpad.png" label="Edit .jwmrc">leafpad ~/.jwmrc</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/lxterminal.png" label="Do 'jwm -p'">lxterminal</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/leafpad.png" label="Edit .jwm-apps">leafpad ~/.jwm-apps</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/aptdaemon-upgrade.png" label="RegenAppMenu">xdg_menu --format jwm --fullmenu >~/.jwm-apps</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/leafpad.png" label="Window Properties">
+                xprop | xmessage -file -
+            </Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/help.png" label="JWM Help ">lxterminal -e man jwm</Program>
+            <Program icon="/usr/share/icons/Vibrancy-Colors/apps/16/aptdaemon-upgrade.png" label="Reload JWM Menu">jwm -reload</Program>
+            <Restart label="Restart JWM" icon="/usr/share/icons/Vibrancy-Colors/apps/16/aptdaemon-upgrade.png"/>
+        </Menu>
+        <Separator/>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/actions/16/gnome-run.png" label="Run">
+            dmenu_run
+        </Program>
+        <Separator/>
+        <Exit label="Log Out" confirm="true" icon="/usr/share/icons/Vibrancy-Colors/apps/16/login.png"/>
+        <Separator/>
+        <Program icon="/usr/share/icons/Vibrancy-Colors/actions/16/gnome-logout.png" label="Shut Down">
+            /opt/porteus-scripts/extra/shutdownscript
+        </Program>
+        <Separator/>
+    </RootMenu>
+
+    <!-- Options for program groups. -->
+    <Group>
+        <Class>Pidgin</Class>
+        <Option>sticky</Option>
+    </Group>
+    <Group>
+        <Name>lxterminal</Name>
+        <Option>opacity:1.0</Option>
+        <Option>notitle</Option>
+        <Option>tiled</Option>
+    </Group>
+    <Group>
+        <Name>xedit</Name>
+        <Option>icon:editor.png</Option>
+    </Group>
+    <Group>
+        <Name>xcalc</Name>
+        <Option>icon:calculator.png</Option>
+    </Group>
+
+    <!-- Tray at the bottom. -->
+    <Tray x="0" y="-1" width="0" height="30" autohide="false" valign="bottom">
+
+        <TrayButton popup="Press Here for Menu!" label="joe porteus" icon="/usr/share/pixmaps/porteus/porteus128.png">root:1</TrayButton>
+        <TrayButton popup="This is For IF You want to MINImise Everything!!" label="_v_">showdesktop</TrayButton>
+        <TrayButton popup="Open Rox FileManager" icon="/usr/libexec/ROX-Filer/images/application.png">exec:rox</TrayButton>
+        <TrayButton popup="Open a Terminal" icon="/usr/share/icons/hicolor/48x48/apps/lxterminal.png">exec:lxterminal</TrayButton>
+        <TrayButton popup="Browse the Web" icon="/usr/share/icons/hicolor/48x48/apps/firefox.png">exec:firefox</TrayButton>
+
+        <Pager labeled="true"/>
+
+        <TaskList maxwidth="256"/>
+
+        <Dock/>
+        <Clock>xclock</Clock>
+
+    </Tray>
+
+    <!-- Visual Styles -->
+    <WindowStyle>
+        <Font>FreeSans-9:bold</Font>
+        <Width>4</Width>
+        <Height>20</Height>
+        <Active>
+            <Text>#FFFFFF</Text>
+            <Title>#546F95:#202F3D</Title>
+            <Outline>#000000</Outline>
+            <Opacity>1.0</Opacity>
+        </Active>
+        <Inactive>
+            <Text>#777777</Text>
+            <Title>#333333:#111111</Title>
+            <Outline>#000000</Outline>
+            <Opacity>1.0</Opacity>
+        </Inactive>
+    </WindowStyle>
+    <TrayStyle>
+        <Font>FreeSans-12:normal</Font>
+        <Background>#111111</Background>
+        <Foreground>#546F95</Foreground>
+        <Opacity>0.90</Opacity>
+    </TrayStyle>
+    <TaskListStyle>
+        <Font>FreeSans-12:normal</Font>
+        <ActiveForeground>#FFFFFF</ActiveForeground>
+        <ActiveBackground>#111111:#546F95</ActiveBackground>
+        <Foreground>#546F95</Foreground>
+        <Background>#333333:#111111</Background>
+    </TaskListStyle>
+    <PagerStyle>
+        <Outline>#000000</Outline>
+        <Text>#546F95</Text>
+        <Foreground>#444444</Foreground>
+        <Background>#111111</Background>
+        <ActiveForeground>#546F95</ActiveForeground>
+        <ActiveBackground>#202F3D</ActiveBackground>
+    </PagerStyle>
+    <MenuStyle>
+        <Font>FreeSans-11</Font>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#333333</Background>
+        <ActiveForeground>#FFFFFF</ActiveForeground>
+        <ActiveBackground>#202F3D:#546F95</ActiveBackground>
+        <Opacity>0.85</Opacity>
+    </MenuStyle>
+    <PopupStyle>
+        <Font>FreeSans-11</Font>
+        <Outline>#000000</Outline>
+        <Foreground>#999999</Foreground>
+        <Background>#000000</Background>
+    </PopupStyle>
+
+    <!-- Path where icons can be found.
+         IconPath can be listed multiple times to allow searching
+         for icons in multiple paths.
+      -->
+    <IconPath>
+        /usr/share/icons/wm-icons/32x32-gant
+    </IconPath>
+
+    <!-- Virtual Desktops -->
+    <!-- Desktop tags can be contained within Desktops for desktop names. -->
+    <Desktops width="4" height="1">
+        <!-- Default background. Note that a Background tag can be
+              contained within a Desktop tag to give a specific background
+              for that desktop.
+         -->
+        <Desktop name="term">
+        <Background type="image">/usr/share/backgrounds/xfce/porteus.jpg</Background>
+        </Desktop>
+        <Desktop name="file">
+        <Background type="gradient">#000000:#202F3D</Background>
+        </Desktop>
+        <Desktop name="web">
+        <Background type="gradient">#202F3D:#000000</Background>
+        </Desktop>
+        <Desktop name="edit">
+        <Background type="image">/home/guest/.wallpaper/black-remix1.png</Background>
+        </Desktop>
+    </Desktops>
+
+    <!-- Double climageick speed (in milliseconds) -->
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+
+    <!-- Double click delta (in pixels) -->
+    <DoubleClickDelta>2</DoubleClickDelta>
+
+    <!-- The focus model (sloppy or click) -->
+    <FocusModel>sloppy</FocusModel>
+
+    <!-- The snap mode (none, screen, or border) -->
+    <SnapMode distance="10">border</SnapMode>
+
+    <!-- The move mode (outline or opaque) -->
+    <MoveMode>opaque</MoveMode>
+
+    <!-- The resize mode (outline or opaque) -->
+    <ResizeMode>opaque</ResizeMode>
+
+    <!-- Key bindings -->
+    <Key key="Up">up</Key>
+    <Key key="Down">down</Key>
+    <Key key="Right">right</Key>
+    <Key key="Left">left</Key>
+    <Key key="h">left</Key>
+    <Key key="j">down</Key>
+    <Key key="k">up</Key>
+    <Key key="l">right</Key>
+    <Key key="Return">select</Key>
+    <Key key="Escape">escape</Key>
+    <Key key="Print">exec:/opt/porteus-scripts/lxde/gtk-scrot</Key>
+    <Key key="XF86AudioLowerVolume">exec:/opt/porteus-scripts/extra/pxf-sound down</Key>
+    <Key key="XF86AudioRaiseVolume">exec:/opt/porteus-scripts/extra/pxf-sound up</Key>
+    <Key key="XF86AudioMute">exec:/opt/porteus-scripts/extra/pxf-sound toggle</Key>
+
+    <Key mask="A" key="Tab">nextstacked</Key>
+    <Key mask="A" key="F4">close</Key>
+    <Key mask="A" key="#">desktop#</Key>
+    <Key mask="A" key="F1">root:1</Key>
+    <Key mask="A" key="F2">window</Key>
+    <Key mask="A" key="F10">maximize</Key>
+    <Key mask="A" key="Right">rdesktop</Key>
+    <Key mask="A" key="Left">ldesktop</Key>
+    <Key mask="A" key="Up">udesktop</Key>
+    <Key mask="A" key="Down">ddesktop</Key>
+    <Key mask="4" key="d">exec:dmenu_run</Key>
+    <Key mask="4" key="f">exec:pcmanfm</Key>
+    <Key mask="4" key="e">exec:leafpad</Key>
+    <Key mask="4" key="w">exec:/opt/porteus-scripts/xorg/browser</Key>
+    <Key mask="4" key="m">exec:lxmusic</Key>
+    <Key mask="4" key="t">exec:lxterminal</Key>
+
+</JWM>

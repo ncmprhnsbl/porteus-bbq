@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Xsession
+Name=Musca
+Name[en_US]=Musca
+Comment=Manual tiling window manger
+Terminal=false
+Exec=musca
+TryExec=musca

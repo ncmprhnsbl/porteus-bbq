@@ -1,0 +1,8 @@
+[submenu] (Conky)
+    [exec] (Stop Conky) {killall conky}
+    [exec] (Standard) {conkytheme default}
+    [exec] (Gotham) {conkytheme gotham}
+    [exec] (Minimal) {conkytheme min}
+    [exec] (Max) {conkytheme max}
+    [exec] (Edit .conkyrc) {leafpad ~/.conkyrc}
+[end] # (Conky)

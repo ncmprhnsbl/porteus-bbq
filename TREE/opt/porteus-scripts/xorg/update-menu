@@ -1,0 +1,15 @@
+#!/bin/sh
+# Update LXDE menu:
+
+echo "Updating  menu: update-desktop-database"
+for x in `ps -C openbox -o user=`; do su --login $x -c "rm ~/.cache/menus/* >/dev/null 2>&1; /usr/libexec/menu-cache/menu-cached >/dev/null 2>&1"; done
+for x in `ps -C pekwm -o user=`; do su --login $x -c "rm ~/.cache/menus/* >/dev/null 2>&1; /usr/libexec/menu-cache/menu-cached >/dev/null 2>&1"; done
+for x in `ps -C lxsession -o user=`; do su $x -p -c "lxpanelctl restart"; done
+for x in `ps -C jwm -o user=`; do su --login $x -c "xdg_menu --format jwm --fullmenu >~/.jwm-apps"; jwm -reload; done
+for x in `ps -C fluxbox -o user=`; do su --login $x -c "xdg_menu --format fluxbox >~/.fluxbox/my-menu"; done
+for x in `ps -C e16 -o user=`; do su --login $x -c "perl /usr/share/e16/scripts/e_gen_menu"; done
+for x in `ps -C icewm -o user=`; do su --login $x -c "rm ~/.icewm/programs && xdg_menu --format icewm --fullmenu >> ~/.icewm/programs"; done
+for x in `ps -C awesome -o user=`; do su --login $x -c "xdg_menu --format awesome >~/.config/awesome/portmenu.lua"; done
+for x in `ps -C blackbox -o user=`; do su --login $x -c "xdg_menu --format blackbox >~/.blackbox/portmenu"; done
+update-desktop-database
+

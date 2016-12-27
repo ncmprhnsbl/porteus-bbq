@@ -1,0 +1,17 @@
+manage off Conky
+
+screen 1
+name bling
+pad 0 0 0 32
+exec conky
+
+screen 0
+add file
+add net
+add term
+use file
+exec pcmanfm
+exec lxterminal
+hsplit 1/2
+
+set notify notify-send -t 3000 Musca "$(cat)"

@@ -1,0 +1,3 @@
+"AudioVideo"
+"Asunder CD Ripper" "/usr/share/pixmaps/asunder.png" exec "asunder"
+"LXMusic simple music player" "/usr/share/pixmaps/lxmusic.png" exec "lxmusic"

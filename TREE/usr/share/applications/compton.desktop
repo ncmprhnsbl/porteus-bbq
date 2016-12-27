@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=compton
+GenericName=X compositor
+Comment=A X compositor
+Categories=Utility;
+TryExec=compton --config /home/guest/.config/compton/compton.conf
+Exec=compton --config /home/guest/.config/compton/compton.conf
+# Icon=xcompmgr
+# Thanks to quequotion for providing this file!

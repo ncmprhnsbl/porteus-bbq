@@ -1,0 +1,6 @@
+#menu
+command lxterminal lxterminal
+command pcmanfm    pcmanfm
+command leafpad    leafpad
+command lxmusic    lxmusic
+command help       "xterm -e \"man cwm\""

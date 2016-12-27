@@ -1,0 +1,5 @@
+[submenu] (Wallpapers)
+    [exec] (Last Used) {sh ~/.fehbg}
+    [exec] (Browse Thumbs) {feh -B black -g 420x236 -d -S  black-remix1.png ~/.wallpaper}
+    [exec] (Random Pick) {~/.config/feh/wallpapers.sh}
+[end] # (Wallpapers)

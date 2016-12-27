@@ -1,0 +1,5 @@
+##usermenu##
+[submenu] (Porteus menu)
+      [exec] (PSC) {porteus-settings-centre}
+      [exec] (USM) {usmgui}
+[end]

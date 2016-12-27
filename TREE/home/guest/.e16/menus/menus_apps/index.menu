@@ -1,0 +1,8 @@
+"apps Menu"
+"AudioVideo" "" menu "menus_apps/AudioVideo.menu"
+"Filesystem" "" menu "menus_apps/Filesystem.menu"
+"Graphics" "" menu "menus_apps/Graphics.menu"
+"Network" "" menu "menus_apps/Network.menu"
+"Settings" "" menu "menus_apps/Settings.menu"
+"System" "" menu "menus_apps/System.menu"
+"Utility" "" menu "menus_apps/Utility.menu"

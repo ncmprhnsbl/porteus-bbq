@@ -1,0 +1,30 @@
+# This is an example for IceWM's hotkey definition file.
+#
+# Place your variants in /etc/icewm or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
+#
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysym.h, keysymdefs.h, XF86keysym.h, ...
+# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
+# XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
+#
+key "Alt+Ctrl+t"			lxterminal
+key "Alt+Ctrl+w"			xdg-open about:blank
+
+key "Super+d"                           dmenu_run
+key "Super+f"                           lxterminal -e mc --skin=nicedark.ini
+key "Super+KP_Subtract"		        /opt/porteus-scripts/extra/pxf-sound down
+key "Super+KP_Add"			/opt/porteus-scripts/extra/pxf-sound up
+
+# "Multimedia key" bindings for XFree86. Gather the keycodes of your
+# advanced function keys by watching the output of the xev command whilest
+# pressing those keys and map those symbols by using xmodmap.
+
+key "XF86Standby"			killall -QUIT icewm
+key "XF86AudioLowerVolume"	        /opt/porteus-scripts/extra/pxf-sound down
+key "XF86AudioRaiseVolume"	        /opt/porteus-scripts/extra/pxf-sound up
+key "XF86AudioMute"			/opt/porteus-scripts/extra/pxf-sound toggle
+key "XF86HomePage"			xdg-open about:blank
+key "XF86Search"			xdg-open http://www.google.com
+key "XF86Eject"				eject

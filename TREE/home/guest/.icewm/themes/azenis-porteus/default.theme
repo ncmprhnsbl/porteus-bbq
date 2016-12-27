@@ -1,0 +1,120 @@
+ThemeDescription="Black Red Delight"
+ThemeAuthor="ttuuxxx"
+#Look=gtk
+Look=flat
+
+#  mouse rollover
+RolloverButtonsSupported=1 # 0/1
+#Lets get started :)
+
+  TitleBarHeight=23
+  BorderSizeX=4
+  BorderSizeY=4
+  CornerSizeX=26
+  CornerSizeY=26
+  DlgBorderSizeX=4
+  DlgBorderSizeY=4
+TitleButtonsRight="xmi"
+TitleButtonsSupported="xmi"
+
+#Clock Stuff
+TaskBarClockLeds=0
+TaskBarShowNetStatus=0
+TaskBarShowCPUStatus=0
+TimeFormat="%X"
+ClockFontNameXft		=	sans-serif:size=10:bold
+ColorClock="black"
+# Borders
+
+  ColorNormalBorder="rgb:27/28/2f"
+  ColorActiveBorder="rgb:27/28/2f"
+
+# Titlebar
+  
+  ColorActiveTitleBar="rgb:f0/f0/f0"
+  ColorNormalTitleBar="rgb:f0/f0/f0"
+  ColorNormalTitleBarText="rgb:ff/ff/ff"
+  ColorActiveTitleBarText="rgb:ff/ff/ff"
+  #TitleButtonsSupported="xmirsh"
+
+# Buttons (These are the buttons in the left corner of the taskbar that contain the workspace 
+# numbers, icewm menu button, etc -- assuming you have the taskbar enabled)
+
+  ColorNormalButton="rgb:27/28/2f"
+  ColorNormalButtonText="rgb:f0/f0/f0"
+  ColorActiveButton="rgb:27/28/2f"
+  ColorActiveButtonText="rgb:f0/f0/f0"
+
+# Menus
+
+  ColorNormalMenu="rgb:27/28/2f"
+  ColorActiveMenuItem="rgb:27/28/2f"
+  ColorNormalMenuItemText="rgb:f0/f0/f0"
+  ColorActiveMenuItemText="rgb:f0/f0/f0"
+  ColorDisabledMenuItemText="rgb:75/7f/90"
+
+# Move / Size indicator
+
+  ColorMoveSizeStatus="rgb:f0/f0/f0"
+  ColorMoveSizeStatusText="rgb:bc/6c/ff"
+
+# Taskbar
+  
+  ColorDefaultTaskBar="rgb:40/40/40"
+  ColorNormalTaskBarApp="rgb:27/28/2f"
+  ColorNormalTaskBarAppText="rgb:f0/f0/f0"
+  ColorActiveTaskBarApp="rgb:27/28/2f"
+  ColorActiveTaskBarAppText="rgb:f0/f0/f0"
+  ColorMinimizedTaskBarApp="rgb:27/28/2f"
+  ColorMinimizedTaskBarAppText="rgb:f0/f0/f0"
+
+# Monitors
+
+  ColorCPUStatusUser="rgb:f0/f0/f0"
+  ColorCPUStatusSystem="rgb:ff/bb/31"
+  ColorCPUStatusNice="rgb:ba/ba/ba"
+  ColorCPUStatusIdle="rgb:00/00/00"
+  ColorNetSend="rgb:f0/f0/f0"
+  ColorNetReceive="rgb:ff/bb/31"
+  ColorNetIdle="rgb:00/00/00"
+
+# Input
+
+  ColorInput="rgb:00/00/00"
+  ColorInputText="rgb:bc/6c/ff"
+  ColorInputSelection="rgb:ff/ff/ff"
+  ColorInputSelectionText="rgb:00/00/00"
+
+# Listbox
+
+  ColorListBox="rgb:1c/1c/1c"
+  ColorListBoxText="rgb:f0/f0/f0"
+  ColorListBoxSelection="rgb:f0/f0/f0"
+  ColorListBoxSelectionText="fd/ff/7f"
+
+# Quick Switch
+
+  ColorQuickSwitch="rgb:f0/f0/f0"
+  ColorQuickSwitchText="rgb:f0/f0/f0"
+
+TitleFontNameXft		=	sans-serif:size=10
+MenuFontNameXft			=	sans-serif:size=10
+MinimizedWindowFontNameXft	=	sans-serif:size=9
+ActiveButtonFontNameXft		=	sans-serif:size=9
+NormalButtonFontNameXft		=	sans-serif:size=10
+ToolButtonFontNameXft		=	sans-serif:size=10
+NormalWorkspaceFontNameXft	=	sans-serif:size=10
+ActiveWorkspaceFontNameXft	=	sans-serif:size=10:bold
+QuickSwitchFontNameXft		=	sans-serif:size=10
+ListBoxFontNameXft		=	sans-serif:size=10
+StatusFontNameXft		=	sans-serif:size=10
+ToolTipFontNameXft		=	sans-serif:size=10
+ActiveTaskBarFontNameXft	=	sans-serif:size=10
+NormalTaskBarFontNameXft	=	sans-serif:size=10
+ClockFontNameXft		=	sans-serif:size=10:bold
+InputFontNameXft		=	sans-serif:size=10
+
+TaskBarClockLeds=0
+DesktopBackgroundCenter = 1
+DesktopBackgroundColor = "rgb:00/00/00"
+DesktopBackgroundImage = 'azenis.jpg'

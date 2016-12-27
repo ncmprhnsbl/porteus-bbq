@@ -1,0 +1,7 @@
+bind M-d exec dmenu_run
+
+bind M-f exec pcmanfm
+
+exec sh ~/.fehbg
+ 
+exec xterm

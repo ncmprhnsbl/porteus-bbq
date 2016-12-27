@@ -1,0 +1,11 @@
+# This is an example for IceWM's toolbar definition file.
+#
+# Place your variants in /etc/icewm or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
+#
+prog LXTerm /usr/share/icons/Vibrancy-Colors/apps/16/terminal.png lxterminal
+prog Filemanger /usr/share/icons/Vibrancy-Colors/apps/48/system-file-manager.png lxterminal -e mc --skin=nicedark.ini
+prog Editor /usr/share/icons/Vibrancy-Colors/apps/48/accessories-text-editor.png lxterminal -e mcedit --skin=nicedark.ini
+prog WebBrowser /usr/share/icons/Vibrancy-Colors/apps/16/webbrowser-app /opt/porteus-scripts/xorg/browser
+

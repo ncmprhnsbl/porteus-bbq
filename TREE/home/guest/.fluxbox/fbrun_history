@@ -1,0 +1,5 @@
+lxterminal
+dmenu_run
+porteus-settings-center
+lxterminal -e mocp -T transparent-background
+lxterminal -e mc --skin=nicedark.ini

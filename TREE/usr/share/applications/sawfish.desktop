@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Sawfish
+Name[el]=Πριονόψαρο (Sawfish)
+Exec=sawfish
+GenericName=Sawfish
+Categories=Utility;DesktopUtility;
+Keywords=Window Manager
+NoDisplay=true

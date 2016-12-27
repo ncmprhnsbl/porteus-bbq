@@ -1,0 +1,110 @@
+ThemeDescription="IceNine"
+ThemeAuthor="Albi"
+Look=flat
+Gradients="menubg.xpm menusel.xpm switchbg.xpm taskbarbg.xpm dialogbg.xpm taskbuttonbg.xpm taskbuttonactive.xpm taskbuttonminimized.xpm buttonA.xpm buttonI.xpm toolbuttonbg.xpm workspacebuttonbg.xpm workspacebuttonactive.xpm menubg.xpm taskbuttonactive.xpm menusel.xpm titleIB.xpm titleAB.xpm titleAS.xpm titleIS.xpm"
+RolloverButtonsSupported=1
+
+TitleButtonsLeft=""
+TitleButtonsRight="xmi"
+TitleButtonsSupported="xim"
+#TitleButtonsSupported="xism"
+TitleBarHeight=16
+
+TitleBarJustify=50
+
+BorderSizeX=6
+BorderSizeY=6
+CornerSizeX=26
+CornerSizeY=26
+DlgBorderSizeX=6
+DlgBorderSizeY=6
+
+ColorNormalButton="rgb:00/00/00"
+ColorNormalButtonText="rgb:ff/ff/ff"
+ColorActiveButton="rgb:00/00/00"
+ColorActiveButtonText="rgb:ff/ff/ff"
+
+ColorNormalTitleBarText="rgb:7f/7f/7f"
+ColorActiveTitleBarText="rgb:ff/ff/ff"
+ColorActiveTitleBarShadow="rgb:00/00/00"
+
+ColorActiveBorder="rgb:00/00/00"
+ColorNormalBorder="rgb:00/00/00"
+
+ColorDialog="rgb:00/00/00"
+ColorListBox="rgb:00/00/00"
+ColorListBoxText="rgb:ff/ff/ff"
+ColorListBoxSelection="rgb:00/7f/df"
+ColorListBoxSelectionText="rgb:ff/ff/ff"
+ColorScrollBar="rgb:00/00/00"
+ColorScrollBarSlider="rgb:00/00/00"
+ColorScrollBarButton="rgb:00/00/00"
+ColorScrollBarButtonArrow="rgb:00/00/00"
+ColorLabel="rgb:00/00/00"
+ColorLabelText="rgb:ff/ff/ff"
+
+ColorNormalMenu="rgb:00/00/00"
+ColorActiveMenuItem="rgb:00/00/00"
+ColorNormalMenuItemText="rgb:ff/ff/ff"
+ColorActiveMenuItemText="rgb:ff/ff/ff"
+ColorDisabledMenuItemText="rgb:80/80/80"
+
+ColorDefaultTaskBar="rgb:00/00/00"
+ColorNormalTaskBarApp="rgb:00/00/00"
+ColorNormalTaskBarAppText="rgb:ff/ff/ff"
+ColorInvisibleTaskBarApp="rgb:00/00/00"
+ColorInvisibleTaskBarAppText="rgb:ff/ff/ff"
+ColorActiveTaskBarApp="rgb:00/00/00"
+ColorActiveTaskBarAppText="rgb:ff/ff/ff"
+ColorMinimizedTaskBarApp="rgb:00/00/00"
+ColorMinimizedTaskBarAppText="rgb:ff/ff/ff"
+ColorNormalWorkspaceButton="rgb:00/00/00"
+ColorActiveWorkspaceButton="rgb:30/30/30"
+
+ColorInput="rgb:00/00/00"
+ColorInputText="rgb:ff/ff/ff"
+
+ColorClock=""
+ColorClockText="rgb:ff/ff/ff"
+
+ColorCPUStatusUser="rgb:00/8f/ff"
+ColorCPUStatusSystem="rgb:00/cf/ff"
+ColorCPUStatusNice="rgb:9d/a1/bc"
+# ColorCPUStatusIdle=""
+# silly icewm: ColorCPUStatusIdle="" doesn't work - it's transparent but the monitoring is screwed, so this is poor-man's pseudo-transparency instead :)
+ColorCPUStatusIdle="rgb:00/00/00"
+
+ColorNetSend="rgb:4c/59/a6"
+ColorNetReceive="rgb:9d/a1/bc"
+ColorNetIdle="00/00/00"
+
+ColorToolTip="rgb:00/00/00"
+ColorToolTipText="rgb:FF/FF/FF"
+
+ColorMoveSizeStatus="rgb:0f/0f/10"
+ColorMoveSizeStatusText="rgb:00/8f/ff"
+
+ColorQuickSwitch="rgb:00/00/00"
+ColorQuickSwitchText="rgb:ff/ff/ff"
+
+# Font Specification
+TitleFontNameXft		=	arial:size=9:bold
+MenuFontNameXft			=	zekton:size=7
+MinimizedWindowFontNameXft	=	zekton:size=8.5
+ActiveButtonFontNameXft		=	zekton:size=10
+NormalButtonFontNameXft		=	zekton:size=10
+ToolButtonFontNameXft		=	zekton:size=10
+NormalWorkspaceFontNameXft	=	zekton:size=10
+ActiveWorkspaceFontNameXft	=	zekton:size=4
+QuickSwitchFontNameXft		=	zekton:size=5
+ListBoxFontNameXft		=	zekton:size=10
+StatusFontNameXft		=	zekton:size=10
+ToolTipFontNameXft		=	zekton:size=10
+ActiveTaskBarFontNameXft	=	zekton:size=8.5
+NormalTaskBarFontNameXft	=	zekton:size=8.5
+ClockFontNameXft		=	zekton:size=10
+InputFontNameXft		=	sans-serif:size=10
+
+TaskBarClockLeds=0
+DesktopBackgroundCenter = 1
+DesktopBackgroundImage = '/usr/share/wallpapers/black-remix1.jpg'

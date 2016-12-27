@@ -1,0 +1,8 @@
+"Utility"
+"Archive Manager" "/usr/share/icons/hicolor/48x48/apps/file-roller.png" exec "file-roller"
+"compton" "" exec "compton --config /home/guest/.config/compton/compton.conf"
+"Galculator" "/usr/share/icons/hicolor/48x48/apps/galculator.png" exec "galculator"
+"Leafpad" "/usr/share/pixmaps/leafpad.png" exec "leafpad"
+"P7ZIP File Manager" "/usr/share/pixmaps/p7zip.png" exec "7zFM"
+"Sawfish Config" "" exec "sawfish-config"
+"Screenshot" "applets-screenshooter" exec "/opt/porteus-scripts/extra/gtk-scrot"

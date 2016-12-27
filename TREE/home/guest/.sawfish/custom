@@ -1,0 +1,9 @@
+;; Sawfish user customization -- do not edit by hand!
+;; Use the configurator instead.
+;; sawfish version 1.12.0, written Tue Dec  6 14:13:17 2016
+
+
+(custom-set-typed-variable (quote wallpaper-setter-args) (quote "~/.fehbg") (quote string))
+(custom-set-typed-variable (quote wallpaper-setter) (quote "/bin/sh") (quote file-name))
+(custom-set-typed-variable (quote root-wallpaper) (quote "/home/guest/.wallpaper/black-remix1.png") (quote image))
+(custom-set-typed-variable (quote init-wallpaper) (quote t) (quote boolean))

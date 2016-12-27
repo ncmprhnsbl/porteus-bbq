@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=spectrwm
+Comment=The spectrwm window manager
+Type=Xsession
+Exec=spectrwm
+TryExec=spectrwm

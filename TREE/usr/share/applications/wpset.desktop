@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Set As Wallpaper
+GenericName=Set As Wallpaper
+GenericName[en_US]=Set As Wallpaper
+Comment=Fast Set As Wallpaper
+Exec=feh --bg-scale %F
+Terminal=false
+Type=Application
+Icon=/usr/share/feh/images/feh.png
+Categories=Graphics;2DGraphics;Viewer;
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-bmp;image/x-pcx;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-tga;image/x-xbitmap;
+Name[en_US]=Set As Wallpaper
+NoDisplay=true
+ShowOnlyIn=pcmanfm

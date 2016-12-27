@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#(sleep 3 && /usr/bin/nm-applet) &
+#volumeicon &
+(rm ~/.icewm/programs && xdg_menu --format icewm --fullmenu --root-menu /etc/xdg/menus/arch-applications.menu >>~/.icewm/programs) &
+conky &

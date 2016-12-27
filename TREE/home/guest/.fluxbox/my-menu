@@ -1,0 +1,38 @@
+[submenu] (Applications)
+ [submenu] (Accessories)
+     [exec] (Find Files and Directories) {pfilesearch}
+     [exec] (LXTerminal) {lxterminal}
+     [exec] (MCedit) {lxterminal -e mcedit --skin=nicedark.ini}
+     [exec] (MidnightCommander) {lxterminal -e mc --skin=nicedark.ini}
+     [exec] (Screenshot) {/opt/porteus-scripts/lxde/gtk-scrot}
+ [end] # (Accessories)
+ [submenu] (Internet)
+     [exec] (Avahi SSH Server Browser) {/usr/bin/bssh}
+     [exec] (Avahi VNC Server Browser) {/usr/bin/bvnc}
+     [exec] (Firefox) {firefox }
+     [exec] (Pidgin Internet Messenger) {pidgin}
+     [exec] (gFTP) {gftp }
+     [exec] (polyglot) {polyglot}
+     [exec] (uGet) {uget-gtk }
+ [end] # (Internet)
+ [submenu] (Sound & Video)
+     [exec] (Asunder CD Ripper) {asunder}
+     [exec] (ISO Master) {isomaster}
+     [exec] (MusicOnConsole) {lxterminal -e mocp -T transparent-background}
+     [exec] (Pburn CD/DVD/Blu-ray writer) {pburn}
+ [end] # (Sound & Video)
+ [submenu] (System Tools)
+     [exec] (Mount drives/filesystems/shares) {/opt/porteus-scripts/xorg/psu "/opt/porteus-scripts/mount-manager"}
+     [exec] (Porteus FAQ) {/opt/porteus-scripts/xorg/browser /usr/doc/Porteus-FAQ/index.html}
+     [exec] (Porteus Installer) {/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/pinstaller}
+     [exec] (Porteus Settings Centre) {/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/porteus-settings-centre}
+     [exec] (Porteus System Info) {/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/xpsinfo}
+     [exec] (Porteus save file manager) {/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/make-changes}
+     [exec] (Super User Mode - MC ) {gnsu lxterminal -e mc --skin=gotar.ini}
+     [exec] (Super User Mode - Spacefm) {gnsu spacefm /root}
+     [exec] (Super User Mode - Terminal) {/opt/porteus-scripts/xorg/terminal -e "su -"}
+     [exec] (USM (Unified Slackware package Manager)) {/opt/porteus-scripts/xorg/psu /usr/bin/usmgui}
+     [exec] (UXTerm) {uxterm}
+     [exec] (VirtualBox builder) {/opt/porteus-scripts/gtk-easy-build-start}
+ [end] # (System Tools)
+[end] # (Applications)

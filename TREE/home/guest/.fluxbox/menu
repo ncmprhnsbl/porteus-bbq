@@ -1,0 +1,57 @@
+[begin] (Porteus Flux)
+               [separator]
+               [exec] (Audio Player) {lxmusic}
+               [exec] (File Manager) {lxterminal -e mc --skin=nicedark.ini}
+               [exec] (Terminal) {lxterminal}
+               [exec] (Editor) {lxterminal -e mcedit --skin=nicedark.ini}
+               [exec] (Web Browser) {/opt/porteus-scripts/xorg/browser}
+               [separator] 
+[include] (~/.fluxbox/my-menu)
+               [separator]
+        [submenu] (Preferences)
+                [exec] (Customize Look and Feel) {lxappearance}
+                [submenu] (Conky)
+                [exec] (Standard Conky) {conkytheme default}
+                [exec] (Min Conky) {conkytheme min} 
+                [exec] (Max Conky) {conkytheme max} 
+                [exec] (Gotham Conky) {conkytheme gotham} 
+                [exec] (Stop Conky) {killall conky} 
+                [exec] (Conky Config) {lxterminal -e mcedit ~/.conkyrc}
+                [separator]
+                [end]
+                [submenu] (Compton)
+                [exec] (Start Compton) {compton --config ~/.config/compton/compton.conf}
+                [exec] (Stop Compton) {killall compton}
+                [exec] (Edit Compton.conf) {lxterminal -e mcedit ~/.config/compton/compton.conf}
+                [separator]
+                [end]
+        [separator]
+	[end]
+	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+		[submenu] (Styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
+		[end]
+                [submenu] (Wallpaper)
+                        [wallpapers] (/usr/share/wallpapers)
+		        [separator]
+                [end]
+                [submenu] (Tools)
+                [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center} 
+                [exec] (Run) {fbrun -font 10x20 -fg grey -bg black -title run} 
+                [exec] (Regen Menu) {fluxbox-generate_menu} 
+                [end]
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+		[separator]
+	[end]	
+	[separator]
+	[submenu] (Exit)
+	        [exec] (ShutDown) {/opt/porteus-scripts/extra/shutdownscript}
+	        [exit] (Logout)
+                [separator]
+                [end]
+	[separator]
+[end]

@@ -1,0 +1,4 @@
+"Network"
+"gFTP" "/usr/share/pixmaps/gftp.png" exec "gftp"
+"NetworkManager" "networkmanager" exec "lxterminal -e nmtui"
+"polyglot" "/usr/share/pixmaps/porteus/globe.png" exec "polyglot"

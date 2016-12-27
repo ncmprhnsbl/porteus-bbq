@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Xsession
+Name=wmii
+Name[en_US]=wmii
+Comment=Simple and fast window manger
+Terminal=false
+Exec=wmii
+TryExec=wmii
